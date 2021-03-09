@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let site = prompt("네이버, 다음, 구글, 네이트 중 자주 가는 사이트는?")
+    let url
+
+    if (site == "네이버"){
+      url = "https://www.naver.com/"
+    } else if (site == "다음"){
+      url = "https://www.daum.net/" 
+    } else if (site == "구글"){
+      url = "https://www.google.co.kr/"
+    } else if (site == "네이트"){
+       url = "https://www.nate.com/"
+    } else {
+      "해당 사이트가 없습니다."
+    }
+    console.log(url)
+    location.href = url 
+</script>
+  
+</body>
+</html>
